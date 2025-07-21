@@ -5,7 +5,8 @@ public class Main{
     public static void main(String[] args) {
         Student s = new Student();
         System.out.println(s.get_verified());
-        System.out.println(s.set_membership("Gold"));
+        s.set_membership("Gold");
+        System.out.println(s.get_membership());
 
 
 
