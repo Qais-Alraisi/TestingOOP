@@ -4,6 +4,13 @@ public class User {
     private String _name;
     private String _membership = "Bronze";
     public static List<User> admins;
+    boolean _verified = false;
+    void set_verified(boolean verified){
+        _verified = verified;
+    }
+    boolean get_verified(){
+        return _verified;
+    }
 
     public static void print_admin_names(){
         for (User u: admins) {
@@ -56,5 +63,10 @@ public class User {
     }
     public User(){
 
+    }
+
+    void verify(){
+        System.out.println("Verifying...");
+        set_verified(true);
     }
     }

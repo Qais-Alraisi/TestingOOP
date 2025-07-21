@@ -1,11 +1,6 @@
 public class Student extends User {
-    boolean _verified = false;
-
-    void set_verified(boolean verified){
-        _verified = verified;
-    }
-
-    boolean get_verified(){
-        return _verified;
+    void verify(){
+        System.out.println("Verifying through email");
+        set_verified(true);
     }
 }
